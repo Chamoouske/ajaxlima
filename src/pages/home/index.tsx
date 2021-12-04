@@ -1,5 +1,6 @@
 import { Profile } from '../../components/profile';
 import { Links } from '../../components/links';
+import { Technologies } from '../../components/technologies';
 
 import styles from './styles.module.scss';
 
@@ -8,6 +9,7 @@ export function Home() {
     <div className={styles.container}>
       <Profile />
       <Links />
+      <Technologies />
     </div>
   );
 }

@@ -1,0 +1,46 @@
+@import '../../global/styles/theme';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 345px;
+
+  .title {
+    width: 100%;
+    text-align: left;
+
+    color: $text-primary;
+
+    font-family: $text-family;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .technologiesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .technology {
+      margin: 5px;
+      padding: 5px;
+
+      height: 24px;
+      width: 86px;
+
+      background-color: $bg-box-technologies;
+
+      border-radius: 50px;
+
+      font-family: $text-family;
+      font-size: 11px;
+      font-weight: bold;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
