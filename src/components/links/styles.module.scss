@@ -2,14 +2,18 @@
 
 .textLink {
   color: $text-primary;
-  margin: 5px;
+  margin: 7px;
 
   display: flex;
   align-items: center;
 
+  font-family: $text-family;
+  font-size: 17px;
+
   > img {
-    color: $text-primary;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
   }
 
   > a {
