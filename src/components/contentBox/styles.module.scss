@@ -1,0 +1,17 @@
+@import '../../global/styles/theme';
+
+.container {
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 20px;
+
+  background-color: $bg-box-info;
+
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
