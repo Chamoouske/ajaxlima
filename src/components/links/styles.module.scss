@@ -1,0 +1,19 @@
+@import '../../global/styles/theme';
+
+.textLink {
+  color: $text-primary;
+  margin: 5px;
+
+  display: flex;
+  align-items: center;
+
+  > img {
+    color: $text-primary;
+    margin-right: 15px;
+  }
+
+  > a {
+    text-decoration: none;
+    color: $text-primary;
+  }
+}
