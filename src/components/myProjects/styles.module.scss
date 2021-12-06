@@ -1,0 +1,22 @@
+@import '../../global/styles/theme';
+
+.container {
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      color: $text-primary;
+
+      font-family: $text-family;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
