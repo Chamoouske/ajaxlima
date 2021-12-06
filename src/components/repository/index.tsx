@@ -10,6 +10,7 @@ import { useState } from 'react';
 export type RepositoryT = {
   id: string;
   name: string;
+  html_url: string;
   url: string;
   language: string;
   forks: number;
@@ -21,7 +22,8 @@ type PropsT = {
 };
 
 export function Repository({ repository }: PropsT) {
-  const { id, name, url, language, forks, stargazers_count } = repository;
+  const { id, name, html_url, url, language, forks, stargazers_count } =
+    repository;
   const [commit, setCommit] = useState('');
 
   (async function () {
@@ -46,7 +48,7 @@ export function Repository({ repository }: PropsT) {
       <div className={styles.repoNameContainer}>
         <img src={Folder} />
 
-        <a className={styles.repoName} href={url} target="_blank">
+        <a className={styles.repoName} href={html_url} target="_blank">
           {name}
         </a>
       </div>
