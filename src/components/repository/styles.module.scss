@@ -1,0 +1,77 @@
+@import '../../global/styles/theme';
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 70px 1fr;
+  align-items: center;
+
+  // border: 2px solid $text-primary;
+
+  .repoNameContainer {
+    display: flex;
+
+    .repoName {
+      text-decoration: none;
+      color: $text-primary;
+      margin-left: 30px;
+
+      font-family: $text-family;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .repoCommit {
+    text-align: center;
+  }
+
+  .repoStarForkLanguage {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: space-between;
+
+    .repoStarBranch {
+      display: flex;
+      column-gap: 10px;
+      .repoDetailStar {
+        display: flex;
+
+        > h3 {
+          margin-left: 7px;
+        }
+      }
+
+      .repoDetailBranch {
+        display: flex;
+
+        > h3 {
+          margin-left: 7px;
+        }
+      }
+    }
+
+    .repoDetailLang {
+      display: flex;
+      align-items: center;
+      align-self: flex-end;
+
+      .repoLanguageColor {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+
+      > h3 {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  .repoTexts {
+    font-family: $text-family;
+    color: $text-primary;
+    font-size: 19px;
+  }
+}
