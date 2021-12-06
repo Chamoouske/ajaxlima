@@ -25,7 +25,9 @@ export function Technologies() {
 
         <div className={styles.technologiesContainer}>
           {techno.map((technology) => (
-            <p className={styles.technology}>{technology.toUpperCase()}</p>
+            <p key={technology} className={styles.technology}>
+              {technology.toUpperCase()}
+            </p>
           ))}
         </div>
       </div>

@@ -28,11 +28,11 @@ export function MyProjects() {
 
       <div className={styles.projectsContainer}>
         {repositories.map((repository: RepositoryT) => (
-          <ContentBox>
-            <div key={repository.id}>
+          <div key={repository.id}>
+            <ContentBox>
               <Repository repository={repository} />
-            </div>
-          </ContentBox>
+            </ContentBox>
+          </div>
         ))}
       </div>
     </div>
