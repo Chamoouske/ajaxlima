@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import styles from './styles.module.scss';
 
 import Folder from '../../assets/folder.svg';
@@ -5,7 +7,6 @@ import Star from '../../assets/star.svg';
 import GitBranch from '../../assets/git-branch.svg';
 
 import { getCommits } from '../../services/github';
-import { useState } from 'react';
 
 export type RepositoryT = {
   id: string;
@@ -24,16 +25,20 @@ type PropsT = {
 export function Repository({ repository }: PropsT) {
   const { id, name, html_url, url, language, forks, stargazers_count } =
     repository;
-  const [commit, setCommit] = useState('');
 
-  (async function () {
-    const commits = await getCommits(url);
-    const { commit } = commits[0];
+  const [commit, setCommit] = useState<any>('');
 
-    setCommit(commit.message);
-  })();
+  useEffect(() => {
+    (async function () {
+      const commits = await getCommits(url);
+      const { commit } = commits[0];
 
-  // console.log(repository);
+      const { message } = commit;
+      const [date] = commit.author.date.split('T');
+
+      setCommit({ message, date });
+    })();
+  }, []);
 
   const colors: any = {
     TypeScript: '#2b7489',
@@ -54,7 +59,9 @@ export function Repository({ repository }: PropsT) {
       </div>
 
       <div className={styles.repoCommit}>
-        <h3 className={styles.repoTexts}>{commit}</h3>
+        <h3 className={styles.repoTexts}>
+          {commit.date + ': ' + commit.message}
+        </h3>
       </div>
 
       <div className={styles.repoStarForkLanguage}>
