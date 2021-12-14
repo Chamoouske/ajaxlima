@@ -1,0 +1,52 @@
+@import '../../global/styles/theme';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .title {
+    width: 100%;
+    text-align: left;
+
+    color: $text-primary;
+
+    font-family: $text-family;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .experiencesContainer {
+    display: flex;
+
+    .experience {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      > li {
+        text-align: left;
+        margin-left: 25px;
+
+        color: $text-primary;
+
+        font-family: $text-family;
+        font-size: 19px;
+        font-weight: bold;
+
+        > div {
+          display: grid;
+          grid-template-columns: 1fr;
+
+          margin-left: 25px;
+
+          > span {
+            color: $text-primary;
+
+            font-family: $text-family;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
