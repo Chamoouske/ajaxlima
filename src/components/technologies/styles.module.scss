@@ -43,5 +43,9 @@
       align-items: center;
       justify-content: center;
     }
+
+    .technology:hover {
+      background-color: $bg-box-technologies-hover;
+    }
   }
 }

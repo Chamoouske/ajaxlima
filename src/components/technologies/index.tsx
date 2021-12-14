@@ -4,13 +4,13 @@ import styles from './styles.module.scss';
 
 export function Technologies() {
   const techno = [
+    'HTML',
     'CSS',
     'SCSS',
     'Javascript',
     'Typescript',
     'ReactJS',
     'React Native',
-    'HTML',
     'PHP',
     'Firebase',
     'MYSQL',
