@@ -6,10 +6,9 @@
   grid-template-rows: 1fr 70px 1fr;
   align-items: center;
 
-  // border: 2px solid $text-primary;
-
   .repoNameContainer {
     display: flex;
+    align-items: center;
 
     .repoName {
       text-decoration: none;
