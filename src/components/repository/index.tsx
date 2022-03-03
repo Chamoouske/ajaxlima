@@ -46,6 +46,7 @@ export function Repository({ repository }: PropsT) {
     'C#': '#178600',
     PHP: '#4F5D95',
     HTML: '#e34c26',
+    Python: '#3572a5'
   };
 
   return (
