@@ -9,10 +9,10 @@ type ExperienceT = {
 };
 
 export function Experience() {
-  const experiences: any = [
+  const experiences: ExperienceT[] = [
     {
       local: 'Petruz',
-      timeCourse: '07/2021 - Today',
+      timeCourse: '07/2021 - 07/2022',
       occupation: 'Infrastructure intern',
     },
   ];
