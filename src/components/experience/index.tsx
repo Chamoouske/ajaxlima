@@ -12,9 +12,19 @@ export function Experience() {
   const experiences: ExperienceT[] = [
     {
       local: 'Petruz',
-      timeCourse: '07/2021 - 07/2022',
+      timeCourse: '07/2021 - 01/2022',
       occupation: 'Infrastructure intern',
     },
+    {
+      local: 'Petruz',
+      timeCourse: '01/2022 - 07/2022',
+      occupation: 'Full-Stack developer intern',
+    },
+    {
+      local: 'Petruz',
+      timeCourse: '07/2022 - 10/2022',
+      occupation: 'Full-Stack developer'
+    }
   ];
 
   return (
