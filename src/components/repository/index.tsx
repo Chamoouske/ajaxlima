@@ -41,12 +41,13 @@ export function Repository({ repository }: PropsT) {
   }, []);
 
   const colors: any = {
-    TypeScript: '#2b7489',
-    JavaScript: '#f1e05a',
-    'C#': '#178600',
-    PHP: '#4F5D95',
-    HTML: '#e34c26',
-    Python: '#3572a5'
+      TypeScript: '#2b7489',
+      JavaScript: '#f1e05a',
+      'C#': '#178600',
+      PHP: '#4F5D95',
+      HTML: '#e34c26',
+      Python: '#3572a5',
+      'Jupyter Notebook': '#DA5B0B',
   };
 
   return (

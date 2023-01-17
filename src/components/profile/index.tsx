@@ -12,7 +12,7 @@ export function Profile() {
           <ImageProfile />
         </div>
         <p className={styles.name}>Ajax Lima de Matos</p>
-        <p className={styles.functionDev}>Full Stack Developer</p>
+        <p className={styles.functionDev}>Full-Stack Developer</p>
       </div>
     </ContentBox>
   );

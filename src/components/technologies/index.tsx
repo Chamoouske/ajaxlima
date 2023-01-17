@@ -11,7 +11,7 @@ export function Technologies() {
     'Typescript',
     'ReactJS',
     'React Native',
-    'PHP',
+    'Java',
     'Firebase',
     'MYSQL',
     'GIT',

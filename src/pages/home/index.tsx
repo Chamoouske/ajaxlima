@@ -20,7 +20,7 @@ export function Home() {
         <Experience />
       </div>
 
-      <div className={styles.containerSocialMidia}>
+      <div className={styles.containerSocialMedia}>
         <MyProjects />
       </div>
     </div>
