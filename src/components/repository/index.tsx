@@ -48,6 +48,7 @@ export function Repository({ repository }: PropsT) {
       HTML: '#e34c26',
       Python: '#3572a5',
       'Jupyter Notebook': '#DA5B0B',
+      Java: '#b07219'
   };
 
   return (
