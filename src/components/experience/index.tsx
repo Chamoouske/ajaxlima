@@ -24,6 +24,11 @@ export function Experience() {
       local: 'Petruz',
       timeCourse: '07/2022 - 10/2022',
       occupation: 'Full-Stack developer'
+    },
+    {
+      local: 'FADESP',
+      timeCourse: '07/2023 - Today',
+      occupation: 'Back-end developer'
     }
   ];
 
